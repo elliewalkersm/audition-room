@@ -1,28 +1,33 @@
-## Front-end Capstone [![Netlify Status](https://api.netlify.com/api/v1/badges/ce8df96d-e54b-49a6-bae4-1ba65f9950b0/deploy-status)](https://app.netlify.com/sites/hmp-pressure/deploys)
+## Front-end Capstone
 ### Project Name
 Audition Room
 ### Overview
-This project is the culmination of the front-end semester at Nashville Software School. It demonstrates timely command of React.js + CRUD functionality.
-
-This app allows the user to find the barometric pressure in any submitted geography and to aggregate the data from multiple locations in a simple interface. The app will fetch location by city name or postal code. The user will be able to specify units of measurement - hPa, mmHg, inches Hg, or mbar. Once that reading prints to the interface, the user can continue adding readings from other locales. The user will be able to delete readings or to edit the reading. Edit functionality will include the ability to change locales or units of measurement. On the readings, the user can flag the likelihood of the pressure triggering a headache event - low, moderate, or high. The user can then organize readings into “trips.”
+This app will allow directors, stage managers, or anyone involved with the audtion process of a production to digitally track actors through the full cycle of the audtions. Actors can be assigned to productions and marked as cast or not. This app will help directors organize and track all of their overlapping productions and referance all actors who have auditioned for their productions.
 ### Personal Motivation
-As somebody living with chronic migraines, I start my day by checking the barometric pressure, so that I can anticipate my day. Now that I am able to travel, I want a simple way to keep an eye on the pressure in multiple places. My most frequent trips entail quite a few changes in altitude and, consequently, flipping through multiple apps to anticipate when I may need extra medications or darker sunglasses. 
+Over the course of my seven years as a stage manager, I was involved with many auditions. Each audition we went through a lot of paper for each actor to track their information and remember thei audition. I want to create a more environmentally friendly way to track that information. I have also work worked with directors who like to work with the actors from past productions and it would be helpful to have all of the information of actors from past productions stored online to reference when starting a new production.
 ### ERD
-
+https://dbdiagram.io/d/60b6bbe7b29a09603d178d78
 ### Wireframe
 
 ### Deployed project
-
+https://auditionroom.netlify.app/
 ### Project board
 https://github.com/elliewalkersm/audition-room/projects/1
 ### Feature List + User Stories
 - Google authentication
-- Users can create new readings.
-- Users can read the readings that they have created.
-- Users can update readings by changing units of measurement.
-- Users can delete readings.
-- Users can assign readings to separate “Trips.”
-- Users can flag readings as low, moderate, or high risk.
-- Users can update flags.
+- Users can add a new production.
+- Users can update a production.
+- Users can delete a production.
+- Users can add a new actor.
+- Users can update actors.
+- Users can delete actors.
+- Users can assign an actor to a production.
+
+STRETCH:
+- Users can filter actors by cast or not.
+- Users can filter productions by active or not.
+- Users can search actors by name, production, or character.
+- Users can seach productions by title or location.
+
 ### Screenshots
 ### Loom Video Walk-through
