@@ -8,7 +8,7 @@ Over the course of my seven years as a stage manager, I was involved with many a
 ### ERD
 https://dbdiagram.io/d/60b6bbe7b29a09603d178d78
 ### Wireframe
-
+https://www.figma.com/file/hLd64vWSNQV0nO9M6xf1ck/Audition-Room
 ### Deployed project
 https://auditionroom.netlify.app/
 ### Project board
