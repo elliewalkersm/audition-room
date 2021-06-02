@@ -30,4 +30,9 @@ STRETCH:
 - Users can seach productions by title or location.
 
 ### Screenshots
+
 ### Loom Video Walk-through
+### Contributors
+Ellie Walker (https://github.com/elliewalkersm)
+
+Portfolio: https://elliejaymeswalker.netlify.app/
