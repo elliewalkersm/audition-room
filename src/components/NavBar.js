@@ -19,8 +19,8 @@ const NavBar = ({ user }) => {
 
   const authenticated = () => (
     <Nav className="ml-auto" navbar>
-      <NavItem><Link className="nav-link mr-3" to="/boards">Projects</Link></NavItem>
-      <NavItem><Link className="nav-link mr-3" to="/add-pins">Actors</Link></NavItem>
+      <NavItem><Link className="nav-link mr-3" to="/projects">Projects</Link></NavItem>
+      <NavItem><Link className="nav-link mr-3" to="/actors">Actors</Link></NavItem>
     </Nav>
   );
 
