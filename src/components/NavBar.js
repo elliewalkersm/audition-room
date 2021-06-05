@@ -29,7 +29,7 @@ const NavBar = ({ user }) => {
       <Navbar color="dark" light expand="xl" sticky="top">
         <Nav className="mr-auto" navbar>
           <NavbarBrand href="/">AR</NavbarBrand>
-          <NavItem><a className="nav-link mr-3 ml-3" to="/">Home</a></NavItem>
+          <NavItem><Link className="nav-link mr-3 ml-3" to="/">Home</Link></NavItem>
         </Nav>
         <NavbarToggler onClick={toggle} /><Collapse isOpen={isOpen} navbar>
           { user && authenticated()}
