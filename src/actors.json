@@ -4,7 +4,7 @@
     "production": "Hamilton",
     "character": "Peggy",
     "location": "Nashville, TN",
-    "Notes": "Amazing person! Love her!",
+    "notes": "Amazing person! Love her!",
     "cast": "true"
   },
   "-MbctLmj0dtuUcQRVz31": {
@@ -12,7 +12,7 @@
     "production": "Hamilton",
     "character": "Alexander Hamilton",
     "location": "Tampa, FL",
-    "Notes": "Amazing person! Love him!",
+    "notes": "Amazing person! Love him!",
     "cast": "true"
   },
   "-MbctYxb7tDfCsnELnOh": {
@@ -20,7 +20,7 @@
     "production": "Wicked",
     "character": "Glenda",
     "location": "Goodlettscille, TN",
-    "Notes": "Not the right fit",
+    "notes": "Not the right fit",
     "cast": "false"
   }
 }
