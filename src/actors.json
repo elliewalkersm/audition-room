@@ -1,0 +1,26 @@
+{
+  "-Mbct4jO0LcBgzcFZp4X": {
+    "name": "Ellie Walker",
+    "production": "Hamilton",
+    "character": "Peggy",
+    "location": "Nashville, TN",
+    "Notes": "Amazing person! Love her!",
+    "cast": "true"
+  },
+  "-MbctLmj0dtuUcQRVz31": {
+    "name": "Rob Cole",
+    "production": "Hamilton",
+    "character": "Alexander Hamilton",
+    "location": "Tampa, FL",
+    "Notes": "Amazing person! Love him!",
+    "cast": "true"
+  },
+  "-MbctYxb7tDfCsnELnOh": {
+    "name": "Lauren Walker",
+    "production": "Wicked",
+    "character": "Glenda",
+    "location": "Goodlettscille, TN",
+    "Notes": "Not the right fit",
+    "cast": "false"
+  }
+}
