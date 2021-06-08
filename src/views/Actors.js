@@ -1,9 +1,10 @@
 import React from 'react';
+import ActorCard from '../components/ActorCard';
 
 export default function Actors() {
   return (
     <div>
-      <h1>Actors Go Here</h1>
+      <ActorCard/>
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+import ProjectCard from '../components/ProjectCard';
 
 export default function Projects() {
   return (
     <div>
-      <h1>Projects Go Here</h1>
+      <ProjectCard/>
     </div>
   );
 }

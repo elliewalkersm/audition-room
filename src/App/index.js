@@ -5,9 +5,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
 import Routes from '../helpers/Routes';
 import NavBar from '../components/NavBar';
+import getProjects from '../helpers/data/ProjectData';
 
 function App() {
   const [user, setUser] = useState(null);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     firebase.auth().onAuthStateChanged((authed) => {
@@ -17,7 +19,7 @@ function App() {
           username: authed.email.split('@gmail.com')[0],
           uid: authed.uid
         };
-        // getBoards(authed.uid).then((response) => setBoards(response));
+        getProjects(authed.uid).then((response) => setProjects(response));
         setUser(userInfo);
       } else if (user || user === null) {
         setUser(false);
@@ -28,7 +30,7 @@ function App() {
     <div className='App'>
      <Router>
         <NavBar user={user} />
-        <Routes user={user} />
+        <Routes user={user} projects={projects} setProjects={setProjects}/>
       </Router>
     </div>
   );
