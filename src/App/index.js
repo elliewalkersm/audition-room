@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
 import Routes from '../helpers/Routes';
 import NavBar from '../components/NavBar';
-import getProjects from '../helpers/data/ProjectData';
+import { getProjects } from '../helpers/data/ProjectData';
 
 function App() {
   const [user, setUser] = useState(null);

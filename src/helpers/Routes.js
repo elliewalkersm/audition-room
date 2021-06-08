@@ -7,7 +7,7 @@ import Actors from '../views/Actors';
 import NotFound from '../views/NotFound';
 import SingleProject from '../views/SingleProject';
 
-function Routes({ user }) {
+function Routes({ user, projects, setProjects }) {
   const PrivateRoute = ({ component: Component, ...rest }) => {
     // when we call this function in the return, it is looking for an argument. `props` here is taco.
     const routeChecker = (taco) => (user
@@ -22,9 +22,9 @@ function Routes({ user }) {
     <div className='content-containter'>
       <Switch>
         <Route exact path="/" component={() => <Home />} />
-        <PrivateRoute exact path="/projects" component={() => <Projects user={user} />} />
+        <PrivateRoute exact path="/projects" component={() => <Projects user={user} projects={projects} setProjects={setProjects}/>} user={user}/>
         <PrivateRoute exact path="/actors" component={() => <Actors user={user} />} />
-        <PrivateRoute exact path="/projects/:firebaseKey" component={() => <SingleProject user={user} />} />
+        <PrivateRoute exact path="/projects/:firebaseKey" component={() => <SingleProject user={user} projects={projects}/>} user={user}/>
         <PrivateRoute exact path="*" component={() => <NotFound />} />
       </Switch>
     </div>
@@ -33,6 +33,8 @@ function Routes({ user }) {
 
 Routes.propTypes = {
   component: PropTypes.func,
+  projects: PropTypes.array,
+  setProjects: PropTypes.func,
   user: PropTypes.any
 };
 
