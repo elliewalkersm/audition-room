@@ -12,7 +12,7 @@ import { deleteProject } from '../helpers/data/ProjectData';
 import AddProjectForm from './AddProjectForm';
 
 const ProjectCard = ({
-  uid,
+  user,
   setProjects,
   ...projectInfo
 }) => {
@@ -23,7 +23,7 @@ const ProjectCard = ({
         setEditing((prevState) => !prevState);
         break;
       case 'delete':
-        deleteProject(projectInfo.firebaseKey, uid).then((response) => setProjects(response));
+        deleteProject(projectInfo.firebaseKey, user.uid).then((response) => setProjects(response));
         break;
       default:
         console.warn('Nothing Selected');
@@ -54,6 +54,7 @@ const ProjectCard = ({
           formTitle='Edit Project'
           {...projectInfo}
           setProjects={setProjects}
+          user={user}
         />
       }
     </CardBody>
@@ -64,7 +65,7 @@ const ProjectCard = ({
 ProjectCard.propTypes = {
   projectInfo: PropTypes.object,
   setProjects: PropTypes.func,
-  uid: PropTypes.any,
+  user: PropTypes.any,
 };
 
 export default ProjectCard;
