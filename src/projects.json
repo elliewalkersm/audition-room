@@ -1,0 +1,23 @@
+{
+  "-Mbcw0ysuzw9GdfKJEKm": {
+    "title": "Hamilton",
+    "location": "Nashville, TN",
+    "venue": "TPAC",
+    "dates": "6/20/21-7/4/21",
+    "active": "true"
+  },
+  "--MbcwBB-Dvt2FWTyz0KH": {
+    "title": "Wicked",
+    "location": "New York, NY",
+    "venue": "Gershwin Theater",
+    "dates": "7/20/21-8/6/21",
+    "active": "true"
+  },
+  "-MbcwKFEyDXDd8y7lQXt": {
+    "title": "Dear Evan Hansen",
+    "location": "Atlanta, GA",
+    "venue": "Some Theater",
+    "dates": "1/20/21-2/4/21",
+    "active": "false"
+  }
+}
