@@ -7,7 +7,7 @@ import {
   Button
 } from 'reactstrap';
 import { SiAddthis } from 'react-icons/si';
-import { TiEdit } from 'react-icons/ti';
+import { TiFilter } from 'react-icons/ti';
 import ProjectCard from '../components/ProjectCard';
 import { getProjects } from '../helpers/data/ProjectData';
 import AddProjectForm from '../components/AddProjectForm';
@@ -30,7 +30,7 @@ function Projects({ user }) {
       <Container className="themed-container icons-header mt-5" fluid={true}>
         <Row>
           <Col xs="6" className="icons-right d-flex justify-content-end">
-            <Button><TiEdit/></Button>
+            <Button><TiFilter/></Button>
               { !addButton
                 ? <Button className="m-2 btn-lg justify-content-center" onClick={handleAddButton}><SiAddthis/></Button>
                 : <div>
