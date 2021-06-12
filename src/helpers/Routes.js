@@ -23,8 +23,8 @@ function Routes({ user }) {
       <Switch>
         <Route exact path="/" component={() => <Home />} />
         <PrivateRoute exact path="/projects" user={user} component={() => <Projects user={user}/>} />
-        <PrivateRoute exact path="/actors" component={() => <Actors user={user} />} />
-        <PrivateRoute exact path="/projects/:firebaseKey" component={() => <SingleProject user={user}/>} user={user}/>
+        <PrivateRoute exact path="/actors" user={user} component={() => <Actors user={user} />} />
+        <PrivateRoute exact path="/projects/:firebaseKey" user={user} component={() => <SingleProject user={user}/>} />
         <PrivateRoute exact path="*" component={() => <NotFound />} />
       </Switch>
     </div>
